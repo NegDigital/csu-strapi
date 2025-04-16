@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "document_uploads",
+  "info": {
+    "singularName": "document-upload",
+    "pluralName": "document-uploads",
+    "displayName": "Document Upload",
+    "description": "PDF document upload"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}
