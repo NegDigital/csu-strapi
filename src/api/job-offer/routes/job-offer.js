@@ -6,4 +6,15 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::job-offer.job-offer');
+const router = createCoreRouter('api::job-offer.job-offer');
+
+router.routes.push({
+  method: 'POST',
+  path: '/job-offers/upload-pdf',
+  handler: 'job-offer.uploadPdf',
+  config: {
+    middlewares: [],
+  },
+});
+
+module.exports = router;
