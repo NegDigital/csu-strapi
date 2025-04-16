@@ -8,7 +8,7 @@ module.exports = {
   routes: [
     {
       method: 'POST',
-      path: '/document-upload/upload-pdf',
+      path: '/job-offers/upload-pdf',
       handler: 'document-upload.uploadPdf',
       config: {
         auth: false,
